@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>10Б класс — Наш класс</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>🏫 10Б класс</h1>
+      <p class="subtitle">Наш класс — наша гордость</p>
+    </div>
+
+    <nav>
+      <button class="nav-btn active" onclick="showTab('home')">
+        🏠 Главная
+      </button>
+      <button class="nav-btn" onclick="showTab('students')">
+        👥 Состав класса
+      </button>
+      <button class="nav-btn" onclick="showTab('events')">
+        🎉 Мероприятия
+      </button>
+    </nav>
+  </header>
+
+  <div id="home" class="tab active">
+    <section class="hero">
+      <h2>Добро пожаловать на сайт нашего класса!</h2>
+      <p class="hero-text">
+        Мы — 10Б класс, дружный и активный коллектив из 25 человек.<br>
+        Учимся, развиваемся и вместе достигаем новых высот!
+      </p>
+      <button class="btn-main" onclick="openModal()">
+        📝 Записаться в класс
+      </button>
+    </section>
+
+    <section class="info-cards">
+      <div class="card">
+        <div class="card-icon">👩‍🏫</div>
+        <h3>Классный руководитель</h3>
+        <p>Винокурова Татьяна Владимировна</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">👥</div>
+        <h3>Состав класса</h3>
+        <p>25 учеников<br>18 — Информатика<br>7 — Физика</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⭐</div>
+        <h3>Наши принципы</h3>
+        <p>Активно участвуем<br>Хорошо учимся<br>Дружим и помогаем</p>
+      </div>
+    </section>
+
+    <section class="achievements">
+      <h2>Наши достижения</h2>
+      <div class="achievement-list">
+        <div class="achievement">🏆 Участие в школьной ярмарке</div>
+        <div class="achievement">🎭 Участие во внутришкольных занятиях</div>
+        <div class="achievement">🚀 Успешное открытие нашего класса</div>
+        <div class="achievement">📚 Участвие в НПК по своим профилям</div>
+		<div class="achievement">🏆 Участие в олимпиадах и мероприятиях за границами школы</div>
+      </div>
+    </section>
+  </div>
+
+	<div id="students" class="tab">
+	  <section class="students-section">
+		<h2>Состав класса</h2>
+		<p class="section-subtitle">
+		  Классный руководитель — Винокурова Татьяна Владимировна
+		</p>
+
+		<div class="direction-block">
+		  <h3 class="direction-title it">
+			💻 Направление «Информатика» — 18 человек
+		  </h3>
+		  <div class="students-grid">
+			<div class="student-card">👤 Попов Оскар</div>
+			<div class="student-card">👤 Николаев Арсен</div>
+			<div class="student-card">👤 Кузьмин Арылхан</div>
+			<div class="student-card">👤 Москвитина Дарина</div>
+			<div class="student-card">👤 Тимофеев Айсыхаан</div>
+			<div class="student-card">👤 Павлов Сандал</div>
+			<div class="student-card">👤 Петрова Вика</div>
+			<div class="student-card">👤 Христофорова Рада</div>
+			<div class="student-card">👤 Слепцова Маша</div>
+			<div class="student-card">👤 Липко Данил</div>
+			<div class="student-card">👤 Могзоев Алексей</div>
+			<div class="student-card">👤 Кузаков Сергей</div>
+			<div class="student-card">👤 Коровин Олег</div>
+			<div class="student-card">👤 Иванов Артемий</div>
+			<div class="student-card">👤 Исаков Аркадий</div>
+			<div class="student-card">👤 Алексеева Кристина</div>
+			<div class="student-card">👤 Адамова Полина</div>
+			<div class="student-card">👤 Сивцев Вадим</div>
+		  </div>
+		</div>
+
+		<div class="direction-block">
+		  <h3 class="direction-title physics">
+			⚛️ Направление «Физика» — 7 человек
+		  </h3>
+		  <div class="students-grid">
+			<div class="student-card">👤 Авдеев Михаил</div>
+			<div class="student-card">👤 Евсеева Галя</div>
+			<div class="student-card">👤 Дьячковский Даниил</div>
+			<div class="student-card">👤 Аргунов Олег</div>
+			<div class="student-card">👤 Анисимов Радмир</div>
+			<div class="student-card">👤 Худалшеев Баир</div>
+			<div class="student-card">👤 Антонова Вера</div>
+		  </div>
+		</div>
+
+	  </section>
+	</div>
+
+  <div id="events" class="tab">
+    <section class="events-section">
+      <h2>Наши мероприятия</h2>
+      <p class="section-subtitle">
+        Мы активны как внутри школы, так и за её пределами!
+      </p>
+
+      <div class="events-grid">
+<div class="event-card external">
+  <div class="event-icon">🎓</div>
+  <h3>Колледж Синергия</h3>
+  <p>
+    Посещаем Университет Синергия —
+    знакомимся с направлениями обучения,
+    слушаем преподавателей и думаем
+    о будущей профессии.
+  </p>
+  <span class="event-tag">Внешнее</span>
+</div>
+        <div class="event-card internal">
+          <div class="event-icon">🎭</div>
+          <h3>Школьные мероприятия</h3>
+          <p>
+            Активно участвуем и организуем внутришкольные 
+            события: праздники, конкурсы, 
+            тематические недели.
+          </p>
+          <span class="event-tag">Внутришкольное</span>
+        </div>
+
+        <div class="event-card study">
+          <div class="event-icon">🏆</div>
+          <h3>Олимпиады и конкурсы</h3>
+          <p>
+            Участвуем в предметных олимпиадах, 
+            научных конференциях и творческих 
+            конкурсах разного уровня.
+          </p>
+          <span class="event-tag">Учёба</span>
+        </div>
+
+        <div class="event-card internal">
+          <div class="event-icon">🎉</div>
+          <h3>Классные часы</h3>
+          <p>
+            Проводим интересные и полезные классные часы 
+            на актуальные темы, обсуждаем важные вопросы 
+            вместе с классным руководителем.
+          </p>
+          <span class="event-tag">Внутришкольное</span>
+        </div>
+
+        <div class="event-card external">
+          <div class="event-icon">🌍</div>
+          <h3>Экскурсии и выезды</h3>
+          <p>
+            Посещаем музеи, выставки, предприятия 
+            и университеты. Расширяем горизонты 
+            за пределами классной комнаты.
+          </p>
+          <span class="event-tag">Внешнее</span>
+        </div>
+
+        <div class="event-card study">
+          <div class="event-icon">📊</div>
+          <h3>Проектная деятельность</h3>
+          <p>
+            Разрабатываем индивидуальные и групповые 
+            проекты, защищаем их перед комиссией 
+            и получаем реальный опыт.
+          </p>
+          <span class="event-tag">Учёба</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeModal()">✕</button>
+      <h2>📝 Записаться в класс</h2>
+      <p>Оставьте свои данные, и мы свяжемся с вами!</p>
+      <form onsubmit="submitForm(event)">
+        <input type="text" placeholder="Ваше имя" required />
+        <input type="text" placeholder="Фамилия" required />
+        <select required>
+          <option value="">Выберите направление</option>
+          <option value="it">💻 Информатика</option>
+          <option value="physics">⚛️ Физика</option>
+        </select>
+        <input type="text" placeholder="Контакт (телефон или email)" required />
+        <button type="submit" class="btn-submit">Отправить заявку</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="overlay" class="overlay hidden" onclick="closeModal()"></div>
+
+  <footer>
+    <p>© 2026 · 10Б класс · МОБУ СОШ No3 г.Якутск</p>
+    <p>Классный руководитель: Винокурова Т.В.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
